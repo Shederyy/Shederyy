@@ -4,7 +4,8 @@
 - 📫 How to reach me: You can reach me through my email: shederyy@gmail.com. I'm available almost 24/7
 - ⚡ Fun fact: I once was a professional E-Sports player on Overwatch and i reached top 500 people in Europe. That shows dedication and willingness for everything that I like and enjoy doing!
 <div align="center">
-  <img src="dark-souls-knight.gif" width="500" height="300" alt="dark souls">
+  <img src="![dark-souls-knight](https://github.com/user-attachments/assets/28b040ea-2022-43c4-b6db-f1022e8f3238)
+" width="500" height="300" alt="dark souls">
 </div>
            
 <!---
