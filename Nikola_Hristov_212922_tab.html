@@ -1,0 +1,314 @@
+l<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikola's Kursova</title>
+    <script>
+        var pic=new Array("Uni/game1.jpg","Uni/game2.jpg","Uni/game3.jpg","Uni/game4.jpg","Uni/game5.png");
+        var num=pic.length;
+        var i=0;
+        function clickNext()
+        {   
+            i++;
+            checkentry();
+            document.curent.src= pic[i];
+            
+        }
+        function clickPrev()
+        {   
+            i--;
+            checkentry();
+            document.curent.src= pic[i];
+            
+        }
+        function checkentry()
+        {
+            if(i>=pic.length)
+            {
+                i=0;
+                document.curent.src= pic[i];
+            }
+        }
+    </script>
+    <style>
+        .body{
+            background-color: rgb(6, 67, 236);
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a:visited{
+            text-decoration: none;
+            color: black;
+        }
+
+        .cont {
+        max-width: 1050px;
+        width: 90%;
+        margin: auto;
+        }
+
+        .menu{
+            width: 100%;
+            background-color: lime;
+            box-shadow: 0 1px 4px black;
+        }
+
+
+        
+        .menu .menu-items {
+            display: flex;
+        }
+
+
+        .menu .menu-cont a:hover {
+            font-weight: bolder;
+        }
+
+        .menu-cont {
+        display: block;
+        position: relative;
+        height: 60px;
+    }
+
+        .menu-cont .checkbox {
+            position: absolute;
+            display: block;
+            height: 32px;
+            width: 32px;
+            top: 20px;
+            left: 20px;
+            z-index: 5;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .menu-cont .menu-lines {
+            display: block;
+            height: 26px;
+            width: 32px;
+            position: absolute;
+            top: 17px;
+            left: 20px;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .menu-cont .menu-lines .line {
+            display: block;
+            height: 4px;
+            width: 100%;
+            border-radius: 10px;
+            background: #0e2431;
+        }
+
+        .menu-cont .menu-lines .line1 {
+            transform-origin: 0% 0%;
+            transition: transform 0.4s ease-in-out;
+        }
+
+            .menu-cont .menu-lines .line2 {
+            transition: transform 0.2s ease-in-out;
+        }
+
+            .menu-cont .menu-lines .line3 {
+            transform-origin: 0% 100%;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .menu .menu-items {
+            padding-top: 120px;
+            box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+            height: 100vh;
+            width: 100%;
+            transform: translate(-150%);
+            display: flex;
+            flex-direction: column;
+            margin-left: -40px;
+            padding-left: 50px;
+            transition: transform 0.5s ease-in-out;
+            text-align: center;
+        }
+
+        .logo {
+            position: absolute;
+            top: 1px;
+            right: 20px;
+            font-size: 1.2rem;
+            color: black;
+        }
+
+        .menu-cont input[type="checkbox"]:checked ~ .menu-items {
+            transform: translateX(0);
+        }
+
+        .menu-cont input[type="checkbox"]:checked ~ .menu-lines .line1 {
+            transform: rotate(45deg);
+        }
+
+        .menu-cont input[type="checkbox"]:checked ~ .menu-lines .line2 {
+            transform: scaleY(0);
+        }
+
+        .menu-cont input[type="checkbox"]:checked ~ .menu-lines .line3 {
+            transform: rotate(-45deg);
+        }
+
+        .menu-cont input[type="checkbox"]:checked ~ .logo{
+            display: none;
+        }
+        
+        table,th,td{
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: #ccc;
+            box-shadow: 0 1px 4px black;
+        }
+        ul{text-align: center;}
+        
+        li ul {
+            position: absolute;
+            left: 149px;
+            top: 0;
+            display: none;
+            box-shadow: 0 1px 4px black;
+        }
+
+        ul li {
+            position: relative;
+            display: block;
+            text-decoration: none;
+            color: black;
+            background: #ccc;
+            padding: 5px;
+            border: 1px, solid #ccc;
+            border-bottom: 0px;
+            border-radius: 5px;
+            box-shadow: 0 1px 4px black;
+            top: -55px;
+        }
+
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            width: 150px;
+            border-bottom: 1px solid #ccc;
+            box-shadow: 0 1px 4px black;
+        }
+        li:hover ul {display: block;}
+        
+        .images{
+            border: solid 3px black;
+            color: purple;
+            height: 400px;
+            width: 400px;
+            position: absolute;
+        }
+
+        .div-table{
+            position: absolute;
+            top:28%;
+            left:13%;
+            height: 400px;
+            width: 1000px;
+        }
+
+    </style>
+</head>
+<body class="body">
+    <nav>
+        <div class="menu">
+            <div class="cont menu-cont">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="menu-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+                </div>  
+            <div class="menu-items">
+                <ul>
+                    
+                    <li><a href="Nikola_Hristov_212922_Main_Menu.html">Начало</a></li>
+                    <li>Вход
+                        <ul>
+                            <li>Login</li>
+                            <li>Logout</li>
+                        </ul>
+                    </li>
+                    <li>База данни
+                        <ul>
+                            <li>Въвеждане на данни</li>
+                            <li>Изтриване на данни</li>
+                            <li>Редактиране на данни</li>
+                            <li><a href="Nikola_Hristov_212922_tab.html">Търсене на данни</a></li>
+                        </ul>
+                    </li>
+                    <li>Галерия
+                        <ul>
+                            <li>Добавяне на картинка</li>
+                            <li><a href="Nikola_Hristov_212922_gallery.html">Показване на всички картинки в галерията</a></li> 
+                        </ul>
+                    </li>
+                    <li>Анкета
+                        <ul>
+                            <li>Провеждане на анкета</li>
+                            <li>Резултат от анкетата</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        </nav>
+		<div>
+            <table class="div-table">
+                <tr>
+                    <th>Game</th>
+                    <th>Creator</th>
+                    <th>Device</th>
+                    <th>Genre</th>
+                </tr>
+                <tr>
+                    <td>God of War</td>
+                    <td>Santa Monico Studio</td>
+                    <td>PS4/PS5</td>
+                    <td>Adventure</td>
+                </tr>
+                <tr>
+                    <td>Elden Ring</td>
+                    <td>FromSoftware</td>
+                    <td>PC/Xbox/PS4/PS5</td>
+                    <td>Rogue</td>
+
+                </tr>
+                <tr>
+                    <td>Call of Duty MW2</td>
+                    <td>Infinity Ward</td>
+                    <td>PC/Xbox/PS4/PS5</td>
+                    <td>FPS</td>
+ 
+                </tr>
+                <tr>
+                    <td>Gran Turismo 7</td>
+                    <td>Polyphony Digital</td>
+                    <td>PS4/PS5</td>
+                    <td>Driving</td>
+                  
+                </tr>
+                <tr>
+                    <td>The Last Of Us Part 1</td>
+                    <td>Naughty Dog</td>
+                    <td>PS4/PS5</td>
+                    <td>Story Telling/Adventure</td>
+                    
+            </table>
+        </div>	
+</body>
+</html>
