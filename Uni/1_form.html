@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>HTML form</title>
+		<meta charset="utf-8"/>
+</head>
+<body>
+<form action="" method="">
+	<label>Име:</label>
+	<input name="ime" type="text" />
+	<br /><br />
+	<label>Парола:</label>
+	<input name="pa" type="password" />
+	<br /><br />
+	<fieldset><legend>Адрес</legend>
+		<table>
+			<tr>
+				<td>
+				<label>Държава:</label>
+				<select name="country">
+					<optgroup label="Европа">
+					<option value="bg">България</option>
+					<option value="en">Англия</option>
+					<option value="ru">Русия</option>
+					</optgroup>
+					<optgroup label="Азия">
+					<option value="jp">Япония</option>
+					<option value="cn">Китай</option>
+					</optgroup>	  
+				</select>
+				</td>
+				<td>
+				<label>Адрес</label><br />
+				<textarea name="adr" cols="40" rows="10">  
+					въведи адрес
+				</textarea>
+				</td>
+			</tr>
+		</table>
+	</fieldset>
+	<br /><br />
+	<label>Пол</label><br />
+	<input name="pol" type="radio" value="men" checked="checked" />
+	<label>мъж</label>
+	<input name="pol" type="radio" value="women" />
+	<label>жена</label>
+	<br /><br />
+	<label>Хоби:</label><br />
+	<input type="checkbox" name="hobi[]" value="music" />
+	<label>музика</label><br />
+	<input type="checkbox" name="hobi[]" value="movies" />
+	<label>кино</label><br />
+	<input type="checkbox" name="hobi[]" value="sport" />
+	<label>спорт</label>
+	<br /><br />
+	<label>CV:</label>
+	<input type="file" name="cv" />
+	<br /><br />
+	<input type="submit" name="Submit" value="Изпрати" />
+	<input type="reset" name="Reset" value="Изчисти" />
+</form>	
+</body>
+</html>

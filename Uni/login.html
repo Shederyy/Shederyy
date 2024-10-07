@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>LogIn</title>
+<style>
+.t1 {
+	border: 2px double green;
+	background-color: grey;
+	width: 50px;
+	color: blue;
+	font-size: 6pt;
+	}
+.t2 {
+	width: 200px;
+	height: 50px;
+	background-color: red;
+	color: blue;
+}
+.t2:hover {
+	width: 200px;
+	height: 50px;
+	background-color: blue;
+	color: red;
+}
+</style>
+</head>
+<body>
+<form action="scr/script1.php" method="post">
+<table border="1">
+<tr>
+<td><label style="color:red">Name:</label></td>
+<td><input type="text" name="ime" value="въведи име" class="t1" /></td>
+</tr>
+<tr>
+<td><label>Password:</label></td>
+<td><input type="password" name="parola" /></td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input type="submit" name="Submit" value="LogIn" class="t2" />
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>

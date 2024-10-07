@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit files</title>
+  <meta charset="utf-8" />
+</head>
+<body>
+<h1>Which files do you want to edit?</h1>
+<form 
+enctype="multipart/form-data" 
+action="edit.php" 
+method="post">
+  <input type="hidden" 
+		name="MAX_FILE_SIZE" 
+		value="1000000" />
+  Edit these files: 
+  <input name="uf" type="file" accept="image/*" />
+  <input type="submit" value="Send File" />
+</form>
+</body>
+</html>
