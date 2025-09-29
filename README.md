@@ -1,7 +1,8 @@
 - 👋 Hi, I’m Nikola Hristov a.k.a Sheder and i'm 22 years old
 - 👀 I’m interested in front end development, because I like to see and visualise my work however I want.
-- 🌱 I’m currently learning JavaScript and soon Python.
-- 📫 How to reach me: You can reach me through my email: shederyy@gmail.com. I'm available almost 24/7
+- 🌱 I’m soon to be learning Python.
+- For the past 5 years(2021-2025) I went through the basics of: C++/C#, Linux, HTML/CSS, PHP, JavaScript, etc.
+- 📫 How to reach me: You can reach me through my email: nikola.iliyanov.hristov@gmail.com. I'm available almost 24/7.
 - ⚡ Fun fact: I once was a professional E-Sports player on Overwatch and i reached top 500 people in Europe. That shows dedication and willingness for everything that I like and enjoy doing!
 
 
